@@ -1,0 +1,95 @@
+1)
+  Mostro le righe 0 - 24 (160 del totale, La query ha impiegato 0,0014 secondi.)
+
+
+SELECT *
+FROM `students`
+WHERE `date_of_birth` LIKE '%1990%';
+
+
+------------------------------------------------------------------------
+
+
+2)
+
+   Mostro le righe 0 - 24 (479 del totale, La query ha impiegato 0,0026 secondi.)
+
+
+SELECT *
+FROM `courses`
+WHERE `cfu` > 10;
+
+
+------------------------------------------------------------------------
+
+
+
+4)
+
+   Mostro le righe 0 - 24 (286 del totale, La query ha impiegato 0,0022 secondi.)
+
+
+SELECT *
+FROM `courses`
+where `period` = 'I semestre'
+AND `year` = 1;
+
+
+------------------------------------------------------------------------
+
+
+5)
+   Mostro le righe 0 - 20 (21 del totale, La query ha impiegato 0,0048 secondi.)
+
+
+SELECT *
+FROM `exams`
+WHERE `date` = '2020/06/20'
+AND TIME(`hour`) >= '14:00:00';
+
+
+
+
+------------------------------------------------------------------------
+
+
+
+6)
+   Mostro le righe 0 - 24 (38 del totale, La query ha impiegato 0,0005 secondi.)
+
+
+SELECT *
+FROM `degrees`
+WHERE `level` LIKE '%magistrale%';
+
+
+------------------------------------------------------------------------
+
+
+7)
+La query SQL è stata eseguita con successo.
+
+SELECT COUNT(*)
+FROM `departments`;
+
+
+12	
+
+
+
+
+------------------------------------------------------------------------
+
+
+
+8)
+La query SQL è stata eseguita con successo.
+
+SELECT COUNT(*)
+FROM `teachers`
+WHERE `phone` IS NULL;
+
+
+50	
+
+
